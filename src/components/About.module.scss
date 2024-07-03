@@ -84,3 +84,42 @@
         }
     }
 }
+
+@media(max-width: 1250px) {
+    .wrapper .content{
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 1050px) {
+    .wrapper .title .main{
+        font-size: 220px;
+    }
+}
+
+@media(max-width: 800px) {
+    .wrapper .title .main{
+        font-size: 170px;
+    }
+    .wrapper .content{
+        font-size: 33px;
+    }
+}
+
+@media(max-width: 600px) {
+    .wrapper .title .main{
+        font-size: 140px;
+    }
+    .wrapper .content{
+        font-size: 28px;
+    }
+}
+
+@media(max-width: 500px) {
+    .wrapper .title .main{
+        font-size: 120px;
+    }
+    .wrapper .content{
+        font-size: 25px;
+    }
+}
