@@ -1,0 +1,72 @@
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
+    overflow: hidden;
+
+    .bg {
+        background-image: url(../assets/backgrounds/contact.png);
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    .title {
+        font-family: 'MetalBlockTheta';
+        font-size: 200px;
+        text-transform: lowercase;
+        color: #FF0000;
+        -webkit-text-stroke: 1px #2614FF;
+        text-shadow:
+            1px 0 0 rgba(0, 0, 0, 0.2),
+            -1px 0 0 rgba(0, 0, 0, 0.2),
+            0 1px 0 rgba(0, 0, 0, 0.2),
+            0 -1px 0 rgba(0, 0, 0, 0.2);
+        paint-order: stroke fill;
+    }
+
+    .content {
+        color: #FFFFFF;
+        font-family: 'Integral';
+        font-size: 33px;
+        -webkit-text-stroke: 1px #001AFF;
+    }
+
+    .contact {
+        font-family: 'MetalBlockTheta';
+        font-size: 130px;
+        text-transform: capitalize;
+        color: #FF0000;
+        -webkit-text-stroke: 1px #501AA8;
+        paint-order: stroke fill;
+    }
+
+    .people {
+        display: flex;
+        gap: 13rem;
+
+        .box .name {
+            color: #FFFFFF;
+            font-family: 'Integral';
+            font-size: 33px;
+            -webkit-text-stroke: 1px #3506F2;
+        }
+
+        .box .phone {
+            color: #FF0000;
+            font-family: 'Integral';
+            font-size: 33px;
+        }
+        .box .phone:nth-child(2){
+            text-align: end;
+        }
+    }
+}

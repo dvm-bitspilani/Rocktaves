@@ -4,6 +4,7 @@ import About from "./About";
 import Rules from "./Rules";
 import Timeline from "./Timeline";
 import Winners from "./Winners";
+import Contact from "./Contact";
 
 export default function LandingPage(){
     return(
@@ -13,6 +14,7 @@ export default function LandingPage(){
             <Rules />
             <Timeline />
             <Winners />
+            <Contact />
         </div>
     );
 }
