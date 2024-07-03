@@ -1,4 +1,7 @@
 import * as styles from "./Timeline.module.scss"
+import pic1 from "../assets/pic1.png"
+import pic2 from "../assets/pic2.png"
+import pic3 from "../assets/pic3.png"
 
 export default function Timeline() {
     return (
@@ -39,6 +42,11 @@ export default function Timeline() {
                             </span>
                         </div>
                         <div className={styles.text}>Bands that qualified will be invited to play at Oasis, the annual cultural fest of BITS Pilani and the winning band will walk away with the title of the Rocktaves winner at the <span>52nd Oasis</span> along with the prizes which will be  revealed shortly.</div>
+                    </div>
+                    <div className={styles.pics}>
+                        <div className={styles.image}><img src={pic1} alt="" /></div>
+                        <div className={styles.image}><img src={pic2} alt="" /></div>
+                        <div className={styles.image}><img src={pic3} alt="" /></div>
                     </div>
                 </div>
             </section>
