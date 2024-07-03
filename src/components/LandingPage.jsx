@@ -6,11 +6,11 @@ import Timeline from "./Timeline";
 
 export default function LandingPage(){
     return(
-        <>
+        <div className={styles.wrapper}>
             <Home />
             <About />
             <Rules />
             <Timeline />
-        </>
+        </div>
     );
 }
