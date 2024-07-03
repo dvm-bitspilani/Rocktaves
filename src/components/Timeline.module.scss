@@ -19,6 +19,17 @@
         z-index: -1;
     }
 
+    .bg2 {
+        background-image: url(../assets/backgrounds/timeline2.png);
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
     .title {
         font-family: 'MetalBlockTheta';
         font-size: 200px;
@@ -63,8 +74,6 @@
         }
     }
 
-
-
     .content {
         display: flex;
         flex-direction: column;
@@ -81,10 +90,36 @@
                 color: rgba(255, 7, 7, 1);
                 -webkit-text-stroke: 1px rgba(75, 17, 238, 1);
                 paint-order: stroke fill;
+                position: relative;
+
+                .oasis {
+                    position: relative;
+                    left: 2%;
+
+                    .main {
+                        position: absolute;
+                        text-transform: uppercase;
+                        color: rgba(255, 0, 0, 1);
+                        -webkit-text-stroke-width: 0;
+                        -webkit-text-stroke-color: transparent;
+                    }
+
+                    .main:nth-child(1) {
+                        font-size: 101px;
+                        color: rgba(33, 42, 255, 1);
+                        -webkit-text-stroke: 1px rgba(0, 0, 0, 1);
+                        filter: blur(2px);
+                        transform: translateY(-10px);
+                    }
+                }
 
                 span {
                     color: rgba(255, 255, 255, 1);
                     -webkit-text-stroke: 1px rgba(57, 40, 252, 1);
+                }
+
+                .final {
+                    text-transform: uppercase;
                 }
             }
 
@@ -99,6 +134,10 @@
                 }
             }
         }
+    }
+
+    .content:nth-of-type(2) {
+        margin-top: 6rem;
     }
 
 }
