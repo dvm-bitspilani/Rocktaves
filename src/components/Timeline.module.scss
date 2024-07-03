@@ -1,0 +1,102 @@
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 4rem;
+
+    .bg1 {
+        background-image: url(../assets/backgrounds/timeline1.png);
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    .title {
+        font-family: 'MetalBlockTheta';
+        font-size: 200px;
+        text-transform: lowercase;
+        color: white;
+        -webkit-text-stroke: 1px #FF0101;
+        paint-order: stroke fill;
+        display: flex;
+
+        .main:nth-child(1) {
+            color: #011AFF;
+            text-transform: uppercase;
+        }
+
+        .main:nth-child(2) {
+            color: #0148FF;
+        }
+
+        .main:nth-child(3) {
+            color: #6203FF;
+        }
+
+        .main:nth-child(4) {
+            color: #0601FF;
+        }
+
+        .main:nth-child(5) {
+            color: #6203FF;
+        }
+
+        .main:nth-child(6) {
+            color: #1A3FFF;
+        }
+
+        .main:nth-child(7) {
+            color: #0148FF;
+        }
+
+        .main:nth-child(8) {
+            color: #0601FF;
+        }
+    }
+
+
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+
+            .header {
+                font-family: 'MetalBlockTheta';
+                font-size: 96.52px;
+                text-transform: lowercase;
+                color: rgba(255, 7, 7, 1);
+                -webkit-text-stroke: 1px rgba(75, 17, 238, 1);
+                paint-order: stroke fill;
+
+                span {
+                    color: rgba(255, 255, 255, 1);
+                    -webkit-text-stroke: 1px rgba(57, 40, 252, 1);
+                }
+            }
+
+            .text {
+                font-family: 'Integral';
+                font-size: 33px;
+                -webkit-text-stroke: 1px #A30DFF;
+                color: white;
+
+                span {
+                    color: #FF2727;
+                }
+            }
+        }
+    }
+
+}
