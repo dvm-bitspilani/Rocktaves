@@ -1,0 +1,43 @@
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0 4rem;
+
+    .bg {
+        background-image: url(../assets/backgrounds/rules.png);
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    .title {
+        font-family: 'MetalBlockTheta';
+        font-size: 200px;
+        text-transform: capitalize;
+        color: rgba(255, 7, 7, 1);
+        -webkit-text-stroke: 1px rgba(75, 17, 238, 1);
+        paint-order: stroke fill;
+
+    }
+
+    .content {
+        font-family: 'Integral';
+        font-size: 33px;
+        -webkit-text-stroke: 1px rgba(52, 19, 255, 1);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        
+        span{
+            color: #FF2727;
+        }
+    }
+}
