@@ -26,6 +26,7 @@
         -webkit-text-stroke: 1px #FF0101;
         paint-order: stroke fill;
         display: flex;
+        filter: drop-shadow(rgba(255, 1, 1, 1) 0 0 4px);
 
         .main:nth-child(1) {
             color: #011AFF;
