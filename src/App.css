@@ -3,3 +3,9 @@
     src: url(./fonts/MetalBlockTheta.ttf) format("truetype");
     font-weight: 400;
 }
+
+@font-face {
+    font-family: "Integral";
+    src: url(./fonts/IntegralCF-Regular.ttf) format("truetype");
+    font-weight: 700;
+}

@@ -10,8 +10,10 @@
         background-image: url(../assets/backgrounds/home.png);
         background-size: cover;
         position: absolute;
-        top: 0;
-        left: 0;
+        width: 102vw;
+        height: 102vh;
+        top: -1vh;
+        left: -1vw;
         right: 0;
         bottom: 0;
         z-index: -1;

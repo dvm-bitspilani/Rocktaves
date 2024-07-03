@@ -1,0 +1,85 @@
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
+
+    .bg {
+        background-image: url(../assets/backgrounds/about.png);
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    .title {
+        display: flex;
+
+        .main {
+            font-family: 'MetalBlockTheta';
+            font-size: 300px;
+            text-transform: lowercase;
+            color: white;
+            -webkit-text-stroke: 1px rgba(90, 22, 234, 1);
+            paint-order: stroke fill;
+        }
+        .main:nth-child(1){
+            color: #FF0101;
+        }
+        .main:nth-child(2){
+            color: #FF11E7;
+        }
+        .main:nth-child(3){
+            color: #DDFF0B;
+        }
+        .main:nth-child(4){
+            color: #0D51FF;
+        }
+        .main:nth-child(5){
+            color: #EEB930;
+        }
+        .main:nth-child(6){
+            color: #FF4E03;
+        }
+        .main:nth-child(7){
+            color: #1AD6FF;
+        }
+        .main:nth-child(8){
+            color: #FE0B8E;
+        }
+        .main:nth-child(9){
+            color: #1AFF76;
+        }
+    }
+
+    .content{
+        color: white;
+        font-family: 'Integral';
+        font-size: 50px;
+
+        span:nth-child(1){
+            color: #FF0303;
+        }
+        span:nth-child(2){
+            color: #EBFF00;
+        }
+        span:nth-child(3){
+            color: #0D25FF;
+        }
+        span:nth-child(4){
+            color: #03F0FF;
+        }
+        span:nth-child(5){
+            color: #FF03E6;
+        }
+        span:nth-child(6){
+            color: #03FFC2;
+        }
+    }
+}
