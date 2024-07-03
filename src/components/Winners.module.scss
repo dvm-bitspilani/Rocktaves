@@ -1,0 +1,119 @@
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0 4rem;
+    overflow: hidden;
+
+    .bg {
+        background-image: url(../assets/backgrounds/about.png);
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    .title {
+        display: flex;
+        gap: 2rem;
+
+        .word {
+            display: flex;
+
+            .main {
+                font-family: 'MetalBlockTheta';
+                font-size: 200px;
+                text-transform: lowercase;
+                -webkit-text-stroke: 1px #08113E;
+                paint-order: stroke fill;
+            }
+
+            .main:nth-child(1) {
+                color: #FFFFFF;
+            }
+
+            .main:nth-child(2) {
+                color: #189DFE;
+            }
+
+            .main:nth-child(3) {
+                color: #FF7A00;
+            }
+
+            .main:nth-child(4) {
+                color: #80FF00;
+            }
+        }
+
+        .word:nth-child(2) {
+            .main:nth-child(1) {
+                color: #08FCEE;
+            }
+
+            .main:nth-child(2) {
+                color: #00B2FF;
+            }
+
+            .main:nth-child(3) {
+                color: #8000FF;
+            }
+
+            .main:nth-child(4) {
+                color: #9E00FF;
+            }
+
+            .main:nth-child(5) {
+                color: #FF0099;
+            }
+
+            .main:nth-child(6) {
+                color: #FF005C;
+            }
+
+            .main:nth-child(7) {
+                color: #FF0E1D;
+            }
+        }
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+        .box {
+            display: flex;
+            width: 100%;
+            gap: 17rem;
+
+            .pic {
+                display: flex;
+                gap: 2.5rem;
+                align-items: center;
+
+                .image img {
+                    width: auto;
+                    height: 300px;
+                }
+
+                .caption {
+                    color: #01D0F7;
+                    font-family: "Integral";
+                    font-size: 33px;
+                    -webkit-text-stroke: 1px #FF0000;
+                    paint-order: stroke fill;
+
+                    .indian {
+                        -webkit-text-stroke: 1px #8C31FF;
+                        color: #FF0000;
+                    }
+                }
+            }
+        }
+    }
+}
