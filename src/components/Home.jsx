@@ -11,11 +11,11 @@ export default function Home(){
                         <div className={styles.main}>rocktaves</div>
                         <div className={styles.main}>rocktaves</div>
                     </div>
-                    {/* <div className={styles.navbar}>
+                    <div className={styles.navbar}>
                         <div className={styles.nav}>about</div>
                         <div className={styles.nav}>register</div>
                         <div className={styles.nav}>contact</div>
-                    </div> */}
+                    </div>
                 </div>
             </section>
         </>
