@@ -178,11 +178,11 @@
 
 @media(max-width: 600px) {
     .wrapper .title{
-        font-size: 120px;
+        font-size: 90px;
     }
 
     .wrapper .content .container .header{
-        font-size: 50px;
+        font-size: 45px;
     }
 
     .wrapper .content .container .text{
@@ -191,8 +191,15 @@
 }
 
 @media(max-width: 400px) {
+    .wrapper .content{
+        gap: 1rem;
+    }
+
+    .wrapper .content .container .header{
+        font-size: 38px;
+    }
 
     .wrapper .content .container .text{
-        font-size: 20px;
+        font-size: 16px;
     }
 }
