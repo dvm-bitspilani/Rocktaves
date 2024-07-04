@@ -70,3 +70,71 @@
         }
     }
 }
+
+@media(max-width: 800px) {
+    .wrapper .content{
+        font-size: 28px;
+    }
+
+    .wrapper .people{
+        gap: 10rem;
+    }
+
+    .wrapper .people .box .name{
+        font-size: 25px;
+    }
+
+    .wrapper .people .box .phone{
+        font-size: 25px;
+    }
+
+}
+
+@media(max-width: 700px) {
+    .wrapper .title{
+        font-size: 110px;
+    }
+    .wrapper .content{
+        font-size: 20px;
+    }
+    .wrapper .contact{
+        font-size: 90px;
+    }
+
+    .wrapper .people{
+        gap: 6rem;
+    }
+
+    .wrapper .people .box .name{
+        font-size: 18px;
+    }
+
+    .wrapper .people .box .phone{
+        font-size: 18px;
+    }
+
+}
+@media(max-width: 450px) {
+    .wrapper .title{
+        font-size: 85px;
+    }
+    .wrapper .content{
+        font-size: 18px;
+    }
+    .wrapper .contact{
+        font-size: 65px;
+    }
+
+    .wrapper .people{
+        gap: 4rem;
+    }
+
+    .wrapper .people .box .name{
+        font-size: 15px;
+    }
+
+    .wrapper .people .box .phone{
+        font-size: 15px;
+    }
+
+}
