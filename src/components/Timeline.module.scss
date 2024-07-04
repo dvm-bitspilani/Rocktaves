@@ -135,71 +135,176 @@
             }
         }
 
-        .pics{
+        .pics {
             display: flex;
             justify-content: space-between;
             width: 100%;
+
+            .image {
+                height: 450px;
+                width: 400px;
+                position: relative;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    position: absolute;
+                    top: 0;
+                }
+            }
         }
+
+        .carousel {
+            height: 450px;
+            width: 600px;
+            display: none;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
     }
 
     .content:nth-of-type(2) {
-        margin-top: 4rem;
+        margin-top: 3rem;
     }
 
 }
 
+.carouselItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .carouselimage {
+        height: 450px;
+        width: 600px;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+}
+
+@media(max-width: 1400px) {
+    .finalwrapper .content .pics {
+        display: none;
+    }
+
+    .finalwrapper .content .carousel {
+        display: inline;
+    }
+}
+
 @media(max-width: 1050px) {
-    .wrapper .title{
+    .wrapper .title {
         font-size: 150px;
     }
 
-    .wrapper .content .container .header{
+    .wrapper .content .container .header {
         font-size: 80px;
     }
 
-    .wrapper .content .container .text{
+    .wrapper .content .container .header .oasis .main:nth-child(1) {
+        font-size: 84.5px;
+    }
+
+    .wrapper .content .container .text {
         font-size: 28px;
     }
 }
 
 @media(max-width: 800px) {
-    .wrapper .title{
+    .wrapper .title {
         font-size: 150px;
     }
 
-    .wrapper .content .container .header{
+    .wrapper .content .container .header {
         font-size: 65px;
     }
 
-    .wrapper .content .container .text{
+    .wrapper .content .container .header .oasis .main:nth-child(1) {
+        font-size: 69.5px;
+    }
+
+    .wrapper .content .container .text {
         font-size: 26px;
     }
 }
 
-@media(max-width: 600px) {
-    .wrapper .title{
+@media(max-width: 650px) {
+    .wrapper .title {
         font-size: 90px;
     }
 
-    .wrapper .content .container .header{
+    .wrapper .content .container .header {
         font-size: 45px;
     }
 
-    .wrapper .content .container .text{
+    .wrapper .content .container .header .oasis .main:nth-child(1) {
+        font-size: 49.5px;
+    }
+
+    .wrapper .content .container .text {
         font-size: 22px;
+    }
+
+    .finalwrapper .content .carousel{
+        width: 400px;
+    }
+
+    .carouselItem .carouselimage{
+        width: 400px;
+    }
+}
+
+@media(max-width: 450px) {
+    .wrapper .content {
+        gap: 1rem;
+    }
+
+    .wrapper .content .container .header {
+        font-size: 38px;
+    }
+
+    .wrapper .content .container .header .oasis .main:nth-child(1) {
+        font-size: 42.5px;
+    }
+
+    .wrapper .content .container .text {
+        font-size: 16px;
+    }
+
+    .finalwrapper .content .carousel{
+        width: 300px;
+        height: 375px;
+    }
+
+    .carouselItem .carouselimage{
+        width: 300px;
+        height: 375px;
     }
 }
 
 @media(max-width: 400px) {
-    .wrapper .content{
-        gap: 1rem;
+    .finalwrapper .content .container .header {
+        font-size: 31px;
     }
 
-    .wrapper .content .container .header{
-        font-size: 38px;
+    .finalwrapper .content .container .header .oasis .main:nth-child(1) {
+        font-size: 35.5px;
+    }
+    .finalwrapper .content .carousel{
+        width: 275px;
+        height: 325px;
     }
 
-    .wrapper .content .container .text{
-        font-size: 16px;
+    .carouselItem .carouselimage{
+        width: 275px;
+        height: 325px;
     }
 }

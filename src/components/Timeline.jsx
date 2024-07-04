@@ -2,6 +2,23 @@ import * as styles from "./Timeline.module.scss"
 import pic1 from "../assets/pic1.png"
 import pic2 from "../assets/pic2.png"
 import pic3 from "../assets/pic3.png"
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+
+const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1500 },
+      items: 3,
+    },
+    tablet: {
+      breakpoint: { max: 1500, min: 1050 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 1400, min: 0 },
+      items: 1,
+    },
+  };
 
 export default function Timeline() {
     return (
@@ -29,7 +46,7 @@ export default function Timeline() {
                     </div>
                 </div>
             </section>
-            <section className={styles.wrapper}>
+            <section className={`${styles.wrapper} ${styles.finalwrapper}`}>
                 <div className={styles.bg2}></div>
                 <div className={styles.content}>
                     <div className={styles.container}>
@@ -47,6 +64,22 @@ export default function Timeline() {
                         <div className={styles.image}><img src={pic1} alt="" /></div>
                         <div className={styles.image}><img src={pic2} alt="" /></div>
                         <div className={styles.image}><img src={pic3} alt="" /></div>
+                    </div>
+                    <div className={styles.carousel}>
+                        <Carousel
+                            responsive={responsive}
+                            autoPlay={true}
+                            swipeable={true}
+                            draggable={true}
+                            showDots={true}
+                            infinite={true}
+                            partialVisible={false}
+                            itemClass={styles.carouselItem}
+                        >
+                            <div className={styles.carouselimage}><img src={pic1} alt="" /></div>
+                            <div className={styles.carouselimage}><img src={pic2} alt="" /></div>
+                            <div className={styles.carouselimage}><img src={pic3} alt="" /></div>
+                        </Carousel>
                     </div>
                 </div>
             </section>
