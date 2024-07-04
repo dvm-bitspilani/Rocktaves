@@ -71,21 +71,38 @@
     }
 }
 
-@media(max-width: 800px) {
+@media(max-width: 1050px) {
+    .wrapper .title{
+        font-size: 180px;
+    }
     .wrapper .content{
         font-size: 28px;
     }
 
+    .wrapper .people .box .name{
+        font-size: 26px;
+    }
+
+    .wrapper .people .box .phone{
+        font-size: 26px;
+    }
+
+}
+
+@media(max-width: 800px) {
+    .wrapper .content{
+        font-size: 25px;
+    }
     .wrapper .people{
         gap: 10rem;
     }
 
     .wrapper .people .box .name{
-        font-size: 25px;
+        font-size: 24px;
     }
 
     .wrapper .people .box .phone{
-        font-size: 25px;
+        font-size: 24px;
     }
 
 }

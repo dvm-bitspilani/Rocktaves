@@ -7,7 +7,7 @@ import themclones from "../assets/themclones.png"
 export default function Winners() {
     return (
         <>
-            <section className={styles.wrapper}>
+            <section className={`${styles.wrapper} ${styles.bigwrapper}`}>
                 <div className={styles.bg}></div>
                 <div className={styles.title}>
                     <div className={styles.word}>
@@ -26,6 +26,39 @@ export default function Winners() {
                         <div className={styles.main}>s</div>
                     </div>
                 </div>
+                <div className={styles.content}>
+                    <div className={styles.box}>
+                        <div className={styles.pic}>
+                            <div className={styles.image}><img src={indianocean} alt="" /></div>
+                            <div className={styles.caption}>
+                                <div className={styles.indian}>indian</div><div>ocean</div>
+                            </div>
+                        </div>
+                        <div className={styles.pic}>
+                            <div className={styles.caption}>
+                                prestorika
+                            </div>
+                            <div className={styles.image}><img src={prestorika} alt="" /></div>
+                        </div>
+                    </div>
+                    <div className={styles.box}>
+                        <div className={styles.pic}>
+                            <div className={styles.image}><img src={parikrama} alt="" /></div>
+                            <div className={styles.caption}>
+                                parikrama
+                            </div>
+                        </div>
+                        <div className={styles.pic}>
+                            <div className={styles.caption}>
+                                <div>them</div><div className={styles.indian}>clones</div>
+                            </div>
+                            <div className={styles.image}><img src={themclones} alt="" /></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className={`${styles.wrapper} ${styles.smallwrapper}`}>
+                <div className={styles.bg}></div>
                 <div className={styles.content}>
                     <div className={styles.box}>
                         <div className={styles.pic}>
