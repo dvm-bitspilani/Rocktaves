@@ -59,12 +59,16 @@
     }
 
     .wrapper .content{
+        gap: 1rem;
         font-size: 24px;
     }
 }
 
 @media(max-width: 500px) {
+    .wrapper .title{
+        font-size: 90px;
+    }
     .wrapper .content{
-        font-size: 21px;
+        font-size: 18px;
     }
 }
