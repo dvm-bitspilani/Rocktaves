@@ -1,0 +1,96 @@
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg {
+  background-image: url(../assets/backgrounds/contact.png);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.music {
+  position: relative;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  height: 200px;
+}
+
+.music .bar {
+  width: 12px;
+  background: #fff;
+  border-radius: 10px;
+  animation: loader 1.5s ease-in-out infinite;
+}
+
+@keyframes loader {
+  0% {
+    height: 2px;
+  }
+  50% {
+    height: 80px;
+  }
+  100% {
+    height: 2px;
+  }
+}
+
+.music .bar:nth-child(1) {
+  background: rgba(90, 22, 234, 1);
+  animation-delay: 1s;
+}
+
+.music .bar:nth-child(2) {
+  background: #FE0B8E;
+  animation-delay: 0.8s;
+}
+
+.music .bar:nth-child(3) {
+  background: #0D51FF;
+  animation-delay: 0.6s;
+}
+
+.music .bar:nth-child(4) {
+  background: #EEB930;
+  animation-delay: 0.4s;
+}
+
+.music .bar:nth-child(5) {
+  background: #FF0101;
+  animation-delay: 0.2s;
+}
+
+.music .bar:nth-child(6) {
+  background: #FF0101;
+  animation-delay: 0.2s;
+}
+
+.music .bar:nth-child(7) {
+  background: #EEB930;
+  animation-delay: 0.4s;
+}
+
+.music .bar:nth-child(8) {
+  background: #0D51FF;
+  animation-delay: 0.6s;
+}
+
+.music .bar:nth-child(9) {
+  background: #FE0B8E;
+  animation-delay: 0.8s;
+}
+
+.music .bar:nth-child(10) {
+  background: rgba(90, 22, 234, 1);
+  animation-delay: 1s;
+}
