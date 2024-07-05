@@ -55,6 +55,9 @@
             justify-content: space-evenly;
             gap: 20rem;
             .nav {
+                // background-color: yellow;
+                cursor: pointer;
+                transform: translateY(0%);
                 text-decoration: none;
                 font-family: 'MetalBlockTheta';
                 font-size: 96px;

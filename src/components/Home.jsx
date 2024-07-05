@@ -1,7 +1,9 @@
-import * as styles from "./Home.module.scss"
+import * as styles from "./Home.module.scss";
 
-export default function Home(){
-    return(
+export default function Home({ navigation }) {
+
+
+    return (
         <>
             <section className={styles.wrapper}>
                 <div className={styles.bg}></div>
@@ -12,7 +14,7 @@ export default function Home(){
                         <div className={styles.main}>rocktaves</div>
                     </div>
                     <div className={styles.navbar}>
-                        <div className={styles.nav}>about</div>
+                        <div onClick={navigation} className={styles.nav}>about</div>
                         <div className={styles.nav}>register</div>
                         <div className={styles.nav}>contact</div>
                     </div>

@@ -3,6 +3,7 @@ import indianocean from "../assets/indianocean.png"
 import prestorika from "../assets/prestorika.png"
 import parikrama from "../assets/parikrama.png"
 import themclones from "../assets/themclones.png"
+import { motion } from"framer-motion";
 
 export default function Winners() {
     return (
@@ -28,32 +29,68 @@ export default function Winners() {
                 </div>
                 <div className={styles.content}>
                     <div className={styles.box}>
-                        <div className={styles.pic}>
+                        <motion.div className={styles.pic}
+                            variants={{
+                                hidden: {opacity: 0, scale: 0},
+                                visible: {opacity: 1, scale: 1},
+                            }}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                            transition={{duration: 0.75, delay: 0.25}}
+                        >
                             <div className={styles.image}><img src={indianocean} alt="" /></div>
                             <div className={styles.caption}>
                                 <div className={styles.indian}>indian</div><div>ocean</div>
                             </div>
-                        </div>
-                        <div className={styles.pic}>
+                        </motion.div>
+                        <motion.div className={styles.pic}
+                            variants={{
+                                hidden: {opacity: 0, scale: 0},
+                                visible: {opacity: 1, scale: 1},
+                            }}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                            transition={{duration: 0.75, delay: 0.25}}
+                        >
                             <div className={styles.caption}>
                                 prestorika
                             </div>
                             <div className={styles.image}><img src={prestorika} alt="" /></div>
-                        </div>
+                        </motion.div>
                     </div>
                     <div className={styles.box}>
-                        <div className={styles.pic}>
+                    <motion.div className={styles.pic}
+                            variants={{
+                                hidden: {opacity: 0, scale: 0},
+                                visible: {opacity: 1, scale: 1},
+                            }}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                            transition={{duration: 0.75, delay: 0.25}}
+                        >
                             <div className={styles.image}><img src={parikrama} alt="" /></div>
                             <div className={styles.caption}>
                                 parikrama
                             </div>
-                        </div>
-                        <div className={styles.pic}>
+                        </motion.div>
+                        <motion.div className={styles.pic}
+                            variants={{
+                                hidden: {opacity: 0, scale: 0},
+                                visible: {opacity: 1, scale: 1},
+                            }}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                            transition={{duration: 0.75, delay: 0.25}}
+                        >
                             <div className={styles.caption}>
                                 <div>them</div><div className={styles.indian}>clones</div>
                             </div>
                             <div className={styles.image}><img src={themclones} alt="" /></div>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </section>
@@ -61,32 +98,68 @@ export default function Winners() {
                 <div className={styles.bg}></div>
                 <div className={styles.content}>
                     <div className={styles.box}>
-                        <div className={styles.pic}>
+                    <motion.div className={styles.pic}
+                            variants={{
+                                hidden: {opacity: 0, scale: 0},
+                                visible: {opacity: 1, scale: 1},
+                            }}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                            transition={{duration: 0.75, delay: 0.25}}
+                        >
                             <div className={styles.image}><img src={indianocean} alt="" /></div>
                             <div className={styles.caption}>
                                 <div className={styles.indian}>indian</div><div>ocean</div>
                             </div>
-                        </div>
-                        <div className={styles.pic}>
+                        </motion.div>
+                        <motion.div className={styles.pic}
+                            variants={{
+                                hidden: {opacity: 0, scale: 0},
+                                visible: {opacity: 1, scale: 1},
+                            }}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                            transition={{duration: 0.75, delay: 0.25}}
+                        >
                             <div className={styles.caption}>
                                 prestorika
                             </div>
                             <div className={styles.image}><img src={prestorika} alt="" /></div>
-                        </div>
+                        </motion.div>
                     </div>
                     <div className={styles.box}>
-                        <div className={styles.pic}>
+                    <motion.div className={styles.pic}
+                            variants={{
+                                hidden: {opacity: 0, scale: 0},
+                                visible: {opacity: 1, scale: 1},
+                            }}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                            transition={{duration: 0.75, delay: 0.25}}
+                        >
                             <div className={styles.image}><img src={parikrama} alt="" /></div>
                             <div className={styles.caption}>
                                 parikrama
                             </div>
-                        </div>
-                        <div className={styles.pic}>
+                        </motion.div>
+                        <motion.div className={styles.pic}
+                            variants={{
+                                hidden: {opacity: 0, scale: 0},
+                                visible: {opacity: 1, scale: 1},
+                            }}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                            transition={{duration: 0.75, delay: 0.25}}
+                        >
                             <div className={styles.caption}>
                                 <div>them</div><div className={styles.indian}>clones</div>
                             </div>
                             <div className={styles.image}><img src={themclones} alt="" /></div>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </section>

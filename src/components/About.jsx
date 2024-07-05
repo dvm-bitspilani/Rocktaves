@@ -1,6 +1,9 @@
-import * as styles from "./About.module.scss"
+import * as styles from "./About.module.scss";
+import { motion } from"framer-motion";
+import { forwardRef } from "react";
 
 export default function About() {
+
     return (
         <>
             <section className={styles.wrapper}>
@@ -16,15 +19,25 @@ export default function About() {
                     <div className={styles.main}>e</div>
                     <div className={styles.main}>s</div>
                 </div>
-                <div className={styles.content}>
+                <motion.div className={styles.content}
+                    variants={{
+                        hidden: {opacity: 0, y: 75},
+                        visible: {opacity: 1, y: 0},
+                    }}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                    transition={{duration: 0.5, delay: 0.25}}
+                >
                     Rocktaves is one of the oldest semi-professional rock
                     band competitions in India which has acted as a propellor
                     for India's premiere rock groups like <span>PARIKRAMA,</span> <span>INDIAN
-                    OCEAN,</span> <span>SUPERFUZZ,</span> <span>PRESTORIKA,</span> <span>THEM CLONES</span> and <span>EUPHORIA</span>
+                        OCEAN,</span> <span>SUPERFUZZ,</span> <span>PRESTORIKA,</span> <span>THEM CLONES</span> and <span>EUPHORIA</span>
                     who have taken part and won the competition at different
                     points in it's history
-                </div>
+                </motion.div>
             </section>
         </>
     );
 }
+

@@ -4,6 +4,7 @@ import pic2 from "../assets/pic2.png"
 import pic3 from "../assets/pic3.png"
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import { motion } from"framer-motion";
 
 const responsive = {
     desktop: {
@@ -36,20 +37,47 @@ export default function Timeline() {
                     <div className={styles.main}>e</div>
                 </div>
                 <div className={styles.content}>
-                    <div className={styles.container}>
+                    <motion.div className={styles.container}
+                        variants={{
+                            hidden: {opacity: 0, y: 75},
+                            visible: {opacity: 1, y: 0},
+                        }}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        transition={{duration: 0.5, delay: 0.25}}
+                    >
                         <div className={styles.header}>step-1<span>-registration</span></div>
                         <div className={styles.text}>Bands will register on the website and will be allotted the <span>date and the venue of their preliminary round</span> in their <span>respective city</span>. For online participants, the communication on the submission will be done separately.</div>
-                    </div>
-                    <div className={styles.container}>
+                    </motion.div>
+                    <motion.div className={styles.container}
+                        variants={{
+                            hidden: {opacity: 0, y: 75},
+                            visible: {opacity: 1, y: 0},
+                        }}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        transition={{duration: 0.5, delay: 0.25}}
+                    >
                         <div className={styles.header}>step-2<span>-preliminary rounds</span></div>
                         <div className={styles.text}>Each band is expected to perform live for <span>15-20 minutes</span> at their <span>chosen city's venue</span>. One winner from each city and one from each of the two online divisions will qualify for the final round that is held at <span>bits pilani</span></div>
-                    </div>
+                    </motion.div>
                 </div>
             </section>
             <section className={`${styles.wrapper} ${styles.finalwrapper}`}>
                 <div className={styles.bg2}></div>
                 <div className={styles.content}>
-                    <div className={styles.container}>
+                <motion.div className={styles.container}
+                        variants={{
+                            hidden: {opacity: 0, y: 75},
+                            visible: {opacity: 1, y: 0},
+                        }}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        transition={{duration: 0.5, delay: 0.25}}
+                    >
                         <div className={styles.header}>
                             step-3
                             <span className={styles.final}>-finals at </span>
@@ -59,11 +87,38 @@ export default function Timeline() {
                             </span>
                         </div>
                         <div className={styles.text}>Bands that qualified will be invited to play at Oasis, the annual cultural fest of BITS Pilani and the winning band will walk away with the title of the Rocktaves winner at the <span>52nd Oasis</span> along with the prizes which will be  revealed shortly.</div>
-                    </div>
+                    </motion.div>
                     <div className={styles.pics}>
-                        <div className={styles.image}><img src={pic1} alt="" /></div>
-                        <div className={styles.image}><img src={pic2} alt="" /></div>
-                        <div className={styles.image}><img src={pic3} alt="" /></div>
+                        <motion.div className={styles.image}
+                            variants={{
+                                hidden: {opacity: 0, x: 75},
+                                visible: {opacity: 1, x: 0},
+                            }}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.8, ease: "easeOut" }}
+                        ><img src={pic1} alt="" /></motion.div>
+                        <motion.div className={styles.image}
+                            variants={{
+                                hidden: {opacity: 0, x: 75},
+                                visible: {opacity: 1, x: 0},
+                            }}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.8, ease: "easeOut" }}
+                        ><img src={pic2} alt="" /></motion.div>
+                        <motion.div className={styles.image}
+                            variants={{
+                                hidden: {opacity: 0, x: 75},
+                                visible: {opacity: 1, x: 0},
+                            }}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.8, ease: "easeOut" }}
+                        ><img src={pic3} alt="" /></motion.div>
                     </div>
                     <div className={styles.carousel}>
                         <Carousel
