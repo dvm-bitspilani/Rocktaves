@@ -1,6 +1,5 @@
 import * as styles from "./About.module.scss";
 import { motion } from"framer-motion";
-import { forwardRef } from "react";
 
 export default function About() {
 
@@ -40,4 +39,3 @@ export default function About() {
         </>
     );
 }
-
