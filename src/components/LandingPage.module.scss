@@ -87,3 +87,72 @@ section{
         }
     }
 }
+
+@media (max-width: 1400px) {
+    .homewrapper .header .title .main{
+        font-size: 250px;
+    }
+
+    .homewrapper .header .navbar{
+        gap: 15rem;
+    }
+
+    .homewrapper .header .navbar .nav{
+        font-size: 86px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .homewrapper .header .title .main{
+        font-size: 200px;
+    }
+
+    .homewrapper .header .navbar{
+        gap: 13rem;
+    }
+
+    .homewrapper .header .navbar .nav{
+        font-size: 66px;
+    }
+}
+
+@media (max-width: 850px) {
+    .homewrapper .header .title .main{
+        font-size: 150px;
+    }
+
+    .homewrapper .header .navbar{
+        gap: 10rem;
+    }
+
+    .homewrapper .header .navbar .nav{
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 850px) {
+    .homewrapper .header{
+        row-gap: 0;
+    }
+
+    .homewrapper .header .title .main{
+        font-size: 110px;
+    }
+
+    .homewrapper .header .navbar{
+        gap: 2rem;
+        flex-direction: column;
+        transform: translateY(-32px);
+    }
+}
+
+@media (max-width: 500px) {
+
+    .homewrapper .header .title .main{
+        font-size: 80px;
+    }
+
+    .homewrapper .header .navbar .nav{
+        font-size: 40px;
+    }
+}
