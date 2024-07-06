@@ -1,6 +1,6 @@
 import * as styles from "./Home.module.scss";
 
-export default function Home({ navigation }) {
+export default function Home() {
 
 
     return (
@@ -14,7 +14,7 @@ export default function Home({ navigation }) {
                         <div className={styles.main}>rocktaves</div>
                     </div>
                     <div className={styles.navbar}>
-                        <div onClick={navigation} className={styles.nav}>about</div>
+                        <div className={styles.nav}>about</div>
                         <div className={styles.nav}>register</div>
                         <div className={styles.nav}>contact</div>
                     </div>
