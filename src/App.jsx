@@ -56,7 +56,7 @@ function App() {
         );
         setIsLoading(false);
       } catch (error) {
-        console.error("Error loading assets:", error);
+        console.error(error);
         setIsLoading(false);
       }
     };
