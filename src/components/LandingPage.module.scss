@@ -1,17 +1,17 @@
-html{
+html {
     scroll-snap-type: y mandatory;
     overflow-y: visible;
     height: 100vh;
     scroll-behavior: smooth;
 }
 
-section{
+section {
     scroll-snap-align: start;
     scroll-snap-stop: always;
 }
 
-@media(max-width: 800px){
-    section{
+@media(max-width: 800px) {
+    section {
         padding: 0 2rem !important;
     }
 }
@@ -40,7 +40,7 @@ section{
 
     .header {
         display: grid;
-        grid-template-rows: repeat(2,1fr);
+        grid-template-rows: repeat(2, 1fr);
         row-gap: 3rem;
 
         .title {
@@ -56,22 +56,29 @@ section{
                 transform: translate(-50%, -50%);
                 font-family: 'MetalBlockTheta';
                 font-size: 300px;
-                text-transform: uppercase;
                 color: rgba(255, 15, 15, 1);
             }
-            .main:first-child{
-                transform: translate(-48%,-50%);
+
+            .main:first-child {
+                transform: translate(-48%, -50%);
                 color: rgba(34, 30, 210, 1);
             }
-            .main:nth-child(2){
-                transform: translate(-52%,-50%);
+
+            .main:nth-child(2) {
+                transform: translate(-52%, -50%);
                 color: rgba(55, 50, 252, 1);
             }
         }
+
+        .title:hover * {
+            cursor: default;
+        }
+
         .navbar {
             display: flex;
             justify-content: space-evenly;
             gap: 20rem;
+
             .nav {
                 // background-color: yellow;
                 cursor: pointer;
@@ -81,7 +88,7 @@ section{
                 font-size: 96px;
                 text-transform: lowercase;
                 color: rgba(255, 255, 255, 1);
-                -webkit-text-stroke: 1px rgba(57, 40, 252, 1); 
+                -webkit-text-stroke: 1px rgba(57, 40, 252, 1);
                 paint-order: stroke fill;
             }
         }
@@ -89,57 +96,57 @@ section{
 }
 
 @media (max-width: 1400px) {
-    .homewrapper .header .title .main{
+    .homewrapper .header .title .main {
         font-size: 250px;
     }
 
-    .homewrapper .header .navbar{
+    .homewrapper .header .navbar {
         gap: 15rem;
     }
 
-    .homewrapper .header .navbar .nav{
+    .homewrapper .header .navbar .nav {
         font-size: 86px;
     }
 }
 
 @media (max-width: 1150px) {
-    .homewrapper .header .title .main{
+    .homewrapper .header .title .main {
         font-size: 200px;
     }
 
-    .homewrapper .header .navbar{
+    .homewrapper .header .navbar {
         gap: 13rem;
     }
 
-    .homewrapper .header .navbar .nav{
+    .homewrapper .header .navbar .nav {
         font-size: 66px;
     }
 }
 
 @media (max-width: 850px) {
-    .homewrapper .header .title .main{
+    .homewrapper .header .title .main {
         font-size: 150px;
     }
 
-    .homewrapper .header .navbar{
+    .homewrapper .header .navbar {
         gap: 10rem;
     }
 
-    .homewrapper .header .navbar .nav{
+    .homewrapper .header .navbar .nav {
         font-size: 48px;
     }
 }
 
 @media (max-width: 850px) {
-    .homewrapper .header{
+    .homewrapper .header {
         row-gap: 0;
     }
 
-    .homewrapper .header .title .main{
+    .homewrapper .header .title .main {
         font-size: 110px;
     }
 
-    .homewrapper .header .navbar{
+    .homewrapper .header .navbar {
         gap: 2rem;
         flex-direction: column;
         transform: translateY(-32px);
@@ -148,11 +155,11 @@ section{
 
 @media (max-width: 500px) {
 
-    .homewrapper .header .title .main{
+    .homewrapper .header .title .main {
         font-size: 80px;
     }
 
-    .homewrapper .header .navbar .nav{
+    .homewrapper .header .navbar .nav {
         font-size: 40px;
     }
 }
