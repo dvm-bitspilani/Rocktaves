@@ -252,10 +252,10 @@
       width: 90vw;
     }
     .venue__para{
-      font-size: 1rem;
+      font-size: 0.9rem;
     }
     .form__label{
-      font-size: 0.8rem;
+      font-size: 0.7rem;
     }
     .venue input[type="radio"] + label{
       font-size: 0.8rem;
@@ -264,5 +264,11 @@
     .venue{
       display: flex;
       flex-direction: column;
+    }
+    .rocktaves__form h2{
+      font-size: 1.75rem;
+    }
+    .form2 label{
+      font-size: 0.9rem;
     }
   }
