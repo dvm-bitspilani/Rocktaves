@@ -6,6 +6,7 @@ import Timeline from "./Timeline";
 import Winners from "./Winners";
 import Contact from "./Contact";
 import { Link, Element } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
 import 'animate.css';
 import { useEffect, useRef, useState } from "react";
 
@@ -56,7 +57,7 @@ export default function LandingPage() {
                     </div>
                     <div className={styles.navbar}>
                         <Link to="about" smooth={true} duration={1000} className={`${styles.nav} animate__animated animate__bounce`}>about</Link>
-                        <a href="https://www.bits-oasis.org/rocktaves/form" target="_blank" className={`${styles.nav} animate__animated animate__bounce`}>register</a>
+                        <RouterLink to="/form" className={`${styles.nav} animate__animated animate__bounce`}>register</RouterLink>
                         <Link to="contact" smooth={true} duration={700} className={`${styles.nav} animate__animated animate__bounce`}>contact</Link>
                     </div>
                 </div>
