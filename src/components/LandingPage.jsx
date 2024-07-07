@@ -25,7 +25,7 @@ export default function LandingPage() {
                         return Math.random() < 0.5 ? char.toUpperCase() : char.toLowerCase();
                     }).join('');
                     setTitle(newTitle);
-                }, 200);
+                }, 250);
             };
 
             const handleMouseLeave = () => {
