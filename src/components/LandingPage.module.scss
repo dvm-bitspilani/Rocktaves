@@ -8,6 +8,7 @@ html {
 section {
     scroll-snap-align: start;
     scroll-snap-stop: always;
+    padding-bottom: 4rem !important;
 }
 
 @media(max-width: 800px) {
@@ -80,7 +81,6 @@ section {
             gap: 20rem;
 
             .nav {
-                // background-color: yellow;
                 cursor: pointer;
                 transform: translateY(0%);
                 text-decoration: none;
@@ -90,6 +90,10 @@ section {
                 color: rgba(255, 255, 255, 1);
                 -webkit-text-stroke: 1px rgba(57, 40, 252, 1);
                 paint-order: stroke fill;
+                transition: font-size 0.3s ease;
+                &:hover{
+                    font-size: 106px;
+                }
             }
         }
     }

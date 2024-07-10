@@ -31,7 +31,7 @@ export default function About() {
                     Rocktaves is one of the oldest semi-professional rock
                     band competitions in India which has acted as a propellor
                     for India's premiere rock groups like <span>PARIKRAMA,</span> <span>INDIAN
-                        OCEAN,</span> <span>SUPERFUZZ,</span> <span>PRESTORIKA,</span> <span>THEM CLONES</span> and <span>EUPHORIA</span>
+                        OCEAN,</span> <span>SUPERFUZZ,</span> <span>PRESTORIKA,</span> <span>THEM CLONES</span> and <span>EUPHORIA </span>
                     who have taken part and won the competition at different
                     points in it's history
                 </motion.div>

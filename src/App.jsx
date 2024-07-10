@@ -21,7 +21,7 @@ import { Route } from "react-router-dom";
 import Form from "./Form/Form";
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true); // Initial loading state
+  const [isLoading, setIsLoading] = useState(true); 
 
   useEffect(() => {
     const assets = [
@@ -46,11 +46,11 @@ function App() {
         await Promise.all(
           assets.map(
             (asset) =>
-              new Promise((resolve) => {
+              new Promise((resolve, reject) => {
                 const img = new Image();
                 img.src = asset;
-                img.onload = resolve;
-                img.onerror = resolve;
+                img.onload = () => resolve(img);
+                img.onerror = reject;
               })
           )
         );
