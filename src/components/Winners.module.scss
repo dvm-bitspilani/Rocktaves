@@ -27,7 +27,7 @@
 
             .main {
                 font-family: 'MetalBlockTheta';
-                font-size: 200px;
+                font-size: 175px;
                 text-transform: lowercase;
                 -webkit-text-stroke: 1px #08113E;
                 paint-order: stroke fill;
@@ -98,7 +98,7 @@
 
                 .image img {
                     width: auto;
-                    height: 270px;
+                    height: 275px;
                 }
 
                 .caption {
@@ -125,9 +125,9 @@
     display: none;
 }
 
-@media(max-width: 1500px) {
+@media(max-width: 1600px) {
     .wrapper .content .box .pic .image img{
-        height: 250px;
+        height: 225px;
     }
     .wrapper .content .box .pic .caption{
         font-size: 28px;

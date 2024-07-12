@@ -137,8 +137,9 @@
 
         .pics {
             display: flex;
-            justify-content: space-between;
+            // justify-content: space-between;
             width: 100%;
+            gap: 10%;
 
             .image {
                 height: 400px;
