@@ -125,7 +125,7 @@
 
             .text {
                 font-family: 'Integral';
-                font-size: 33px;
+                font-size: 28px;
                 -webkit-text-stroke: 1px #A30DFF;
                 color: white;
 
@@ -141,7 +141,7 @@
             width: 100%;
 
             .image {
-                height: 450px;
+                height: 400px;
                 width: 400px;
                 position: relative;
 
@@ -178,7 +178,7 @@
     align-items: center;
 
     .carouselimage {
-        height: 450px;
+        height: 400px;
         width: 600px;
 
         img {
@@ -198,6 +198,9 @@
     .finalwrapper .content .carousel {
         display: inline;
     }
+    .wrapper .content .container .text {
+        font-size: 26px;
+    }
 }
 
 @media(max-width: 1050px) {
@@ -213,9 +216,7 @@
         font-size: 84.5px;
     }
 
-    .wrapper .content .container .text {
-        font-size: 28px;
-    }
+    
 }
 
 @media(max-width: 800px) {
@@ -232,7 +233,7 @@
     }
 
     .wrapper .content .container .text {
-        font-size: 26px;
+        font-size: 24px;
     }
 }
 
