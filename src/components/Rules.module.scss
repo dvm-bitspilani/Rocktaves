@@ -30,7 +30,7 @@
 
     .content {
         font-family: 'Integral';
-        font-size: 30px;
+        font-size: 33px;
         -webkit-text-stroke: 1px rgba(52, 19, 255, 1);
         color: white;
         display: flex;
@@ -40,6 +40,12 @@
         span{
             color: #FF2727;
         }
+    }
+}
+
+@media(max-width: 1600px) {
+    .wrapper .content{
+        font-size: 30px;
     }
 }
 
