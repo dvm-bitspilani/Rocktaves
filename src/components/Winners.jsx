@@ -76,7 +76,7 @@ export default function Winners() {
                                 parikrama
                             </div>
                         </motion.div>
-                        <motion.div className={styles.pic}
+                        <motion.div className={`${styles.pic} ${styles.clone}`}
                             variants={{
                                 hidden: {opacity: 0, scale: 0},
                                 visible: {opacity: 1, scale: 1},

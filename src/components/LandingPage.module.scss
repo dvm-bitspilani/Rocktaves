@@ -6,6 +6,7 @@ html {
 }
 
 section {
+    box-sizing: border-box;
     scroll-snap-align: start;
     scroll-snap-stop: always;
     padding-bottom: 4rem !important;
