@@ -33,11 +33,23 @@
         paint-order: stroke fill;
     }
 
+    .containerflex{
+        display: flex;
+        flex-direction: column;
+        gap: 6rem;
+    }
+
     .content {
         color: #FFFFFF;
         font-family: 'Integral';
         font-size: 33px;
         -webkit-text-stroke: 1px #001AFF;
+    }
+
+    .contactbox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .contact {
@@ -68,6 +80,12 @@
         .box .phone:nth-child(2){
             text-align: end;
         }
+    }
+}
+
+@media(max-width: 1600px) {
+    .wrapper .containerflex{
+        gap: 0;
     }
 }
 
