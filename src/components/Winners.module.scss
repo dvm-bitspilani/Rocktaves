@@ -132,6 +132,9 @@
     .wrapper .content .box .pic .caption{
         font-size: 28px;
     }
+    .wrapper .content .box .clone{
+        margin-right: 6rem;
+    }
 }
 
 @media(max-width: 1300px) {
@@ -159,6 +162,9 @@
         display: flex;
         gap: 0.5rem;
     }
+    .wrapper .content .box .pic .image img{
+        height: 200px;
+    }
 }
 
 @media(max-width: 900px) {
@@ -182,10 +188,10 @@
         gap: 1rem;
     }
     .wrapper .content .box .pic .image img{
-        height: 250px;
+        height: 220px;
     }
     .smallwrapper .content .box .pic .image img{
-        height: 300px;
+        height: 270px;
     }
 }
 

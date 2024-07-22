@@ -91,6 +91,12 @@
     }
 }
 
+@media(max-width: 1250px) {
+    .wrapper .content{
+        font-size: 35px;
+    }
+}
+
 @media(max-width: 1150px) {
     .wrapper .title .main{
         font-size: 220px;
@@ -102,7 +108,7 @@
         font-size: 170px;
     }
     .wrapper .content{
-        font-size: 33px;
+        font-size: 30px;
     }
 }
 

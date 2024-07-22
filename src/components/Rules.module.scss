@@ -49,6 +49,12 @@
     }
 }
 
+@media(max-width: 1250px) {
+    .wrapper .content{
+        font-size: 26px;
+    }
+}
+
 @media(max-width: 1050px) {
     .wrapper .title{
         font-size: 150px;

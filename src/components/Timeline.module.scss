@@ -220,7 +220,11 @@
     }
 
     .wrapper .content .container .header {
-        font-size: 80px;
+        font-size: 75px;
+    }
+
+    .wrapper .content .container .text {
+        font-size: 23px;
     }
 
     .wrapper .content .container .header .oasis .main:nth-child(1) {
@@ -255,7 +259,7 @@
     }
 }
 
-@media(max-width: 650px) {
+@media(max-width: 730px) {
     .wrapper .title {
         font-size: 90px;
     }
