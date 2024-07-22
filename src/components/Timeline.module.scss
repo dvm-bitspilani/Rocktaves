@@ -197,6 +197,13 @@
     }
 }
 
+@media(max-width: 1450px) {
+    
+    .wrapper .content .container .text {
+        font-size: 26px;
+    }
+}
+
 @media(max-width: 1400px) {
     .finalwrapper .content .pics {
         display: none;
@@ -205,12 +212,9 @@
     .finalwrapper .content .carousel {
         display: inline;
     }
-    .wrapper .content .container .text {
-        font-size: 26px;
-    }
 }
 
-@media(max-width: 1050px) {
+@media(max-width: 1075px) {
     .wrapper .title {
         font-size: 150px;
     }
@@ -223,10 +227,17 @@
         font-size: 84.5px;
     }
 
+    .finalwrapper .content .carousel{
+        height: 350px;
+    }
+
+    .carouselItem .carouselimage{
+        height: 350px;
+    }
     
 }
 
-@media(max-width: 800px) {
+@media(max-width: 865px) {
     .wrapper .title {
         font-size: 150px;
     }
