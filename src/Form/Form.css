@@ -5,7 +5,7 @@
       linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ),
       url('../assets/backgrounds/form.jpg');
     color: #303030;
-    font-family: "Inter", sans-serif;
+    font-family: "Integral";
     min-height: 100vh;
     width: 100%;
     display: flex;
@@ -40,12 +40,15 @@
     text-align: center;
   }
   .rocktaves__form h2 {
-    font-family: 'New Rocker', cursive;
-    font-size: 2.5rem;
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    color: #C20114;
+    font-size: 125px;
+    font-weight: 900;
+    font-family: 'MetalBlockTheta';
+    color: black;
+    -webkit-text-stroke: 1px red;
+    paint-order: stroke fill;
   }
   /* .form{
   
