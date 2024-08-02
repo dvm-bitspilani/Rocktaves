@@ -83,7 +83,7 @@ const Form = ({handleGoBack}) => {
       email_address: emailRef.current.value.trim(),
     };
   
-    const apiUrl = "https://bits-oasis.org/2023/main/preregistrations/RoctavesOnlineReg/";
+    const apiUrl = "https://bits-oasis.org/2024/main/preregistrations/RoctavesOnlineReg/";
   
     console.log(formData);
     console.log(JSON.stringify(formData))
