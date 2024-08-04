@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import "../Form/Form.css";
 
-const Form = ({handleGoBack}) => {
+const Form = ({ handleGoBack }) => {
   const bandNameRef = useRef(null);
   const numberOfMembersRef = useRef(null);
   const yearOfInceptionRef = useRef(null);
@@ -22,7 +22,7 @@ const Form = ({handleGoBack}) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-  
+
     const requiredFields = [
       bandNameRef.current,
       numberOfMembersRef.current,
@@ -33,30 +33,34 @@ const Form = ({handleGoBack}) => {
       contact2NameRef.current,
       contact2PhoneRef.current,
     ];
-  
+
     const isAnyFieldEmpty = requiredFields.some((fieldRef) => !fieldRef.value);
-  
+
     if (isAnyFieldEmpty || !selectedVenue) {
       alert("Please fill in all required fields.");
       return;
     }
-  
-    const numberOfMembersValue = parseInt(numberOfMembersRef.current.value.trim());
-    const yearOfInceptionValue = parseInt(yearOfInceptionRef.current.value.trim());
+
+    const numberOfMembersValue = parseInt(
+      numberOfMembersRef.current.value.trim()
+    );
+    const yearOfInceptionValue = parseInt(
+      yearOfInceptionRef.current.value.trim()
+    );
     const isNumberOfMembersValid = !isNaN(numberOfMembersValue);
     const isYearOfInceptionValid = !isNaN(yearOfInceptionValue);
-  
+
     if (!isNumberOfMembersValid || !isYearOfInceptionValid) {
       alert("Number of members and year of inception must be valid numbers.");
       return;
     }
-  
+
     const isPhoneNumberValid =
-    /^\d{10}$/.test(contact1PhoneRef.current.value.trim()) &&
-    /^\d{10}$/.test(contact2PhoneRef.current.value.trim());
-    console.log(contact1PhoneRef.current.value)
-    console.log(contact1PhoneRef.current.value.trim())
-  
+      /^\d{10}$/.test(contact1PhoneRef.current.value.trim()) &&
+      /^\d{10}$/.test(contact2PhoneRef.current.value.trim());
+    console.log(contact1PhoneRef.current.value);
+    console.log(contact1PhoneRef.current.value.trim());
+
     if (!isPhoneNumberValid) {
       alert("Invalid phone number format. Please use 10 digits.");
       return;
@@ -67,7 +71,7 @@ const Form = ({handleGoBack}) => {
       alert("Invalid email address format.");
       return;
     }
-  
+
     const formData = {
       name: bandNameRef.current.value,
       number_of_members: numberOfMembersValue,
@@ -82,11 +86,12 @@ const Form = ({handleGoBack}) => {
       name3: contact3NameRef.current.value,
       email_address: emailRef.current.value.trim(),
     };
-  
-    const apiUrl = "https://bits-oasis.org/2024/main/preregistrations/RoctavesOnlineReg/";
-  
+
+    const apiUrl =
+      "https://bits-oasis.org/2024/main/preregistrations/RoctavesOnlineReg/";
+
     console.log(formData);
-    console.log(JSON.stringify(formData))
+    console.log(JSON.stringify(formData));
     fetch(apiUrl, {
       method: "POST",
       headers: {
@@ -97,10 +102,10 @@ const Form = ({handleGoBack}) => {
       .then((response) => response.json())
       .then((data) => {
         console.log("API Response:", data);
-        if(data["status"] == 1){
-          alert("Your registration is complete!")
-        }else{
-          alert("There was some error! Please try again")
+        if (data["status"] == 1) {
+          alert("Your registration is complete!");
+        } else {
+          alert("There was some error! Please try again");
         }
       })
       .catch((error) => {
@@ -108,70 +113,69 @@ const Form = ({handleGoBack}) => {
       });
   };
 
-
   return (
     <div className="form_body">
-            {/* <div className="btnBack">Back</div> */}
+      {/* <div className="btnBack">Back</div> */}
       <div className="formContainer">
-      <div className="container">
-        <div className="rocktaves__form">
-          <h2>BAND INFO</h2>
-        </div>
-        <form action="" className="form">
-          <input
-            type="text"
-            placeholder="Name of Band"
-            className="form__input"
-            ref={bandNameRef}
-          />
-          <label htmlFor="bandname" className="form__label">
-            BAND NAME
-          </label>
+        <div className="container">
+          <div className="rocktaves__form">
+            <h2>BAND INFO</h2>
+          </div>
+          <form action="" className="form">
+            <input
+              type="text"
+              placeholder="Name of Band"
+              className="form__input"
+              ref={bandNameRef}
+            />
+            <label htmlFor="bandname" className="form__label">
+              BAND NAME
+            </label>
 
-          <input
-            type="text"
-            placeholder="Number of Members"
-            className="form__input"
-            ref={numberOfMembersRef}
-          />
-          <label htmlFor="members" className="form__label">
-            NUMBER OF MEMBERS
-          </label>
-  
-          <input
-            type="text"
-            placeholder="Your Email"
-            className="form__input"
-            ref={emailRef}
-          />
-          <label htmlFor="members" className="form__label">
-            Your Email
-          </label>
+            <input
+              type="text"
+              placeholder="Number of Members"
+              className="form__input"
+              ref={numberOfMembersRef}
+            />
+            <label htmlFor="members" className="form__label">
+              NUMBER OF MEMBERS
+            </label>
 
-          <input
-            type="text"
-            placeholder="Year of Inception"
-            className="form__input"
-            ref={yearOfInceptionRef}
-          />
-          <label htmlFor="inception" className="form__label">
-            YEAR OF INCEPTION OF BAND
-          </label>
+            <input
+              type="text"
+              placeholder="Your Email"
+              className="form__input"
+              ref={emailRef}
+            />
+            <label htmlFor="members" className="form__label">
+              Your Email
+            </label>
 
-          <input
-            type="text"
-            placeholder="City Based In"
-            className="form__input"
-            ref={cityBasedInRef}
-          />
-          <label htmlFor="city" className="form__label">
-            CITY YOU ARE BASED IN
-          </label>
+            <input
+              type="text"
+              placeholder="Year of Inception"
+              className="form__input"
+              ref={yearOfInceptionRef}
+            />
+            <label htmlFor="inception" className="form__label">
+              YEAR OF INCEPTION OF BAND
+            </label>
 
-          <div className="venue">
-            <p className="venue__para">Venue you can contest in</p>
-            <div className="inner_venue">
-            {/* <input
+            <input
+              type="text"
+              placeholder="City Based In"
+              className="form__input"
+              ref={cityBasedInRef}
+            />
+            <label htmlFor="city" className="form__label">
+              CITY YOU ARE BASED IN
+            </label>
+
+            <div className="venue">
+              <p className="venue__para">Venue you can contest in</p>
+              <div className="inner_venue">
+                {/* <input
               type="radio"
               name="venue"
               value="DELHI"
@@ -180,7 +184,7 @@ const Form = ({handleGoBack}) => {
               checked={selectedVenue === "DELHI"}
             />
             <label htmlFor="delhi">DELHI</label> */}
-            {/*
+                {/*
              <input
               type="radio"
               name="venue"
@@ -192,25 +196,25 @@ const Form = ({handleGoBack}) => {
             <label htmlFor="bangalore">BANGALORE</label>
             
             */}
-           <input
-              type="radio"
-              name="venue"
-              value="CHENNAI"
-              id="chennai"
-              onChange={handleVenueChange}
-              checked={selectedVenue === "CHENNAI"}
-            />
-            <label htmlFor="chennai">CHENNAI</label>
-            <input
-              type="radio"
-              name="venue"
-              value="MUMBAI"
-              id="mumbai"
-              onChange={handleVenueChange}
-              checked={selectedVenue === "MUMBAI"}
-            />
-            <label htmlFor="mumbai">MUMBAI</label>
-              {/* <input
+                <input
+                  type="radio"
+                  name="venue"
+                  value="CHENNAI"
+                  id="chennai"
+                  onChange={handleVenueChange}
+                  checked={selectedVenue === "CHENNAI"}
+                />
+                <label htmlFor="chennai">CHENNAI</label>
+                <input
+                  type="radio"
+                  name="venue"
+                  value="MUMBAI"
+                  id="mumbai"
+                  onChange={handleVenueChange}
+                  checked={selectedVenue === "MUMBAI"}
+                />
+                <label htmlFor="mumbai">MUMBAI</label>
+                {/* <input
               type="radio"
               name="venue"
               value="KOLKATA"
@@ -219,7 +223,7 @@ const Form = ({handleGoBack}) => {
               checked={selectedVenue === "KOLKATA"}
             />
             <label htmlFor="kolkata">KOLKATA</label>*/}
-            {/* <input
+                {/* <input
               type="radio"
               name="venue"
               value="ONLINE"
@@ -228,61 +232,62 @@ const Form = ({handleGoBack}) => {
               checked={selectedVenue === "ONLINE"}
             />
             <label htmlFor="online">ONLINE</label> */}
+              </div>
             </div>
-          </div>
-        </form>
-      </div>
-      <div className="container">
-        <div className="rocktaves__form">
-          <h2>CONTACT INFO</h2>
+          </form>
         </div>
-        <form action="" className="form2">
-          <label htmlFor="contact1">Contact 1</label>
-          <input
-            type="text" 
-            id="contact1"
-            placeholder="Name of Contact"
-            ref={contact1NameRef}
-          />
-          <input
-            type="phone"
-            placeholder="Phone Number"
-            ref={contact1PhoneRef}
-          />
-          <label htmlFor="contact2">Contact 2</label>
-          <input
-            type="text"
-            id="contact2"
-            placeholder="Name of Contact"
-            ref={contact2NameRef}
-          />
-          <input
-            type="phone"
-            placeholder="Phone Number"
-            ref={contact2PhoneRef}
-          /><br />
-          <label htmlFor="contact3">Contact 3 (if any)</label>
-          <input
-            type="text"
-            id="contact3"
-            placeholder="Name of Contact"
-            ref={contact3NameRef}
-          />
-          <input
-            type="phone"
-            placeholder="Phone Number"
-            ref={contact3PhoneRef}
-          />
-        </form>
-      </div>
-      <div className="buttonContainer">
-        <button className="submitBtn" onClick={handleGoBack}>
-          BACK
-        </button>
-        {/*<button type="submit" className="submitBtn" onClick={handleSubmit}>
-          REGISTER
-        </button>*/}
-      </div>
+        <div className="container">
+          <div className="rocktaves__form">
+            <h2>CONTACT INFO</h2>
+          </div>
+          <form action="" className="form2">
+            <label htmlFor="contact1">Contact 1</label>
+            <input
+              type="text"
+              id="contact1"
+              placeholder="Name of Contact"
+              ref={contact1NameRef}
+            />
+            <input
+              type="phone"
+              placeholder="Phone Number"
+              ref={contact1PhoneRef}
+            />
+            <label htmlFor="contact2">Contact 2</label>
+            <input
+              type="text"
+              id="contact2"
+              placeholder="Name of Contact"
+              ref={contact2NameRef}
+            />
+            <input
+              type="phone"
+              placeholder="Phone Number"
+              ref={contact2PhoneRef}
+            />
+            <br />
+            <label htmlFor="contact3">Contact 3 (if any)</label>
+            <input
+              type="text"
+              id="contact3"
+              placeholder="Name of Contact"
+              ref={contact3NameRef}
+            />
+            <input
+              type="phone"
+              placeholder="Phone Number"
+              ref={contact3PhoneRef}
+            />
+          </form>
+        </div>
+        <div className="buttonContainer">
+          <button type="submit" className="submitBtn" onClick={handleSubmit}>
+            REGISTER
+          </button>
+          <button className="submitBtn" onClick={handleGoBack}>
+            BACK
+          </button>
+        </div>
       </div>
     </div>
   );

@@ -219,6 +219,15 @@
   .inner_venue{
     display: flex;
   }
+  .buttonContainer{
+    position: fixed;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
   
   @media (min-width: 1000px){
     .buttonContainer{
@@ -273,5 +282,8 @@
     }
     .form2 label{
       font-size: 0.9rem;
+    }
+    .buttonContainer{
+      gap: 1.25rem;
     }
   }
