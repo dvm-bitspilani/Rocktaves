@@ -175,7 +175,7 @@ const Form = ({ handleGoBack }) => {
             <div className="venue">
               <p className="venue__para">Venue you can contest in</p>
               <div className="inner_venue">
-                <input
+                {/* <input
                   type="radio"
                   name="venue"
                   value="DELHI"
@@ -183,7 +183,7 @@ const Form = ({ handleGoBack }) => {
                   onChange={handleVenueChange}
                   checked={selectedVenue === "DELHI"}
                 />
-                <label htmlFor="delhi">DELHI</label>
+                <label htmlFor="delhi">DELHI</label> */}
 
                 <input
                   type="radio"
@@ -213,24 +213,24 @@ const Form = ({ handleGoBack }) => {
                   checked={selectedVenue === "MUMBAI"}
                 />
                 <label htmlFor="mumbai">MUMBAI</label>
+                {/* <input
+                  type="radio"
+                  name="venue"
+                  value="KOLKATA"
+                  id="kolkata"
+                  onChange={handleVenueChange}
+                  checked={selectedVenue === "KOLKATA"}
+                />
+                <label htmlFor="kolkata">KOLKATA</label> */}
                 <input
-              type="radio"
-              name="venue"
-              value="KOLKATA"
-              id="kolkata"
-              onChange={handleVenueChange}
-              checked={selectedVenue === "KOLKATA"}
-            />
-            <label htmlFor="kolkata">KOLKATA</label>
-                 <input
-              type="radio"
-              name="venue"
-              value="ONLINE"
-              id="online"
-              onChange={handleVenueChange}
-              checked={selectedVenue === "ONLINE"}
-            />
-            <label htmlFor="online">ONLINE</label> 
+                  type="radio"
+                  name="venue"
+                  value="ONLINE"
+                  id="online"
+                  onChange={handleVenueChange}
+                  checked={selectedVenue === "ONLINE"}
+                />
+                <label htmlFor="online">ONLINE</label>
               </div>
             </div>
           </form>
